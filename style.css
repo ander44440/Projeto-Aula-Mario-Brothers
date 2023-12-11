@@ -112,7 +112,7 @@ textarea {
     height: 100vh;
     width: 100vw;
     position: fixed;
-    top: 0;
+    top: 1;
     background: linear-gradient(109deg, rgba(10, 12, 16, 1) 2%, rgba(10, 12, 1, 0.3477766106442577) 51%, rgba(0, 0, 0, 1) 97%);
     z-index: 3;
 }
