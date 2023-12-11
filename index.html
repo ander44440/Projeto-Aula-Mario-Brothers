@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,800;0,900;1,200;1,400;1,500;1,800;1,900&family=Mukta:wght@300;700&family=Roboto:ital@1&display=swap"
+        rel="stylesheet">
+
+    <title>Super Mario</title>
+
+
+</head>
+
+
+<body>
+    <div class="video-mario">
+        <video src="video.mp4" autoplay muted loop></video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-principal">
+
+        <img src="logo.png" alt="logo do mario" class="logo-mario" />
+        <p>Voce ja encontrou uma situação de emergencia com
+            encanamentos?
+            <br> Vazamentos inesperados, canos entupidos e torneiras
+            que não param de pingar?
+            <br>Não se preocupe, pois estamos aqui pra salvar o dia!
+            Apresentamos a voces
+            <br>os encanadores mais famosos do reino dos cogumelos - Mario e Luigi.
+
+        </p>
+        <button onclick="cliqueiNoBotão()"><i>Fale conosco</i></button>
+    </div>
+
+    <img src="./mario.png" alt="logo do mario" class="imagem-luigi" />
+
+        
+    <form class="fale-conosco" action="https://formsubmit.co/ander44440@gmail.com" method="POST">
+       
+        <input placeholder="Nome" type="text" name="nome">
+        <input placeholder="Contato" type="tel" name="telefone">
+        <input placeholder="email" type="email" name="email">
+        <textarea placeholder="Descreva sua problema aqui" name="problema"></textarea>
+        <button onclick="sumirFormulario()">Enviar informções</button>
+    </form>
+    <div class="mascara-form">
+        
+    </div>
+
+</body>
+<!--====AQUI COMEÇA A ***LINGUAGEM DE PROGRAMAÇÃO = JavaScript***====-->
+<script>
+   // Conceito de VARIÁVEIS = É apenas um pequeno espaço dentro do programa p/ guardar qualquer coisa//
+   let formulario = document.querySelector(".fale-conosco")
+   let mascara = document.querySelector(".mascara-form")
+
+   console.log(formulario)
+   // Funções = trecho de codgo que só será aplicado quando for solicitado//
+   function cliqueiNoBotão() {
+    formulario.style.left = "800px"
+    mascara.style.visibility = "visible"
+   }
+
+   function sumirFormulario(){
+    formulario.style.left = "-320px"
+    mascara.style.visibility = "hidden"
+   }
+
+</script>
+
+</html>
